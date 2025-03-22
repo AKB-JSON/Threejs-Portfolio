@@ -33,7 +33,7 @@ export function Island({
   const [performanceIssue, setPerformanceIssue] = useState(false);
   
   // Optimize for mobile
-  const modelScale = useMemo(() => isMobile ? 0.32 : 0.38, []);
+  const modelScale = useMemo(() => isMobile ? 0.35 : 0.41, []);
   
   // Throttle function to limit how often we update during movement
   const throttle = (callback, delay) => {
