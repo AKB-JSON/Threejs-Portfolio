@@ -194,7 +194,7 @@ export function Island({
     // Essential meshes that should always be rendered
     const essentialMeshes = [
       <mesh key="island" geometry={nodes.Final_Bridge1_SF_Island_Mat_0.geometry} material={materials.SF_Island_Mat} />,
-      <mesh key="rocks" geometry={nodes.Final_Bridge1_SF_Rocks_Mat_0.geometry} material={materials.SF_Rocks_Mat} />,
+      // <mesh key="rocks" geometry={nodes.Final_Bridge1_SF_Rocks_Mat_0.geometry} material={materials.SF_Rocks_Mat} />,
       <mesh key="grasscards" geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0.geometry} material={materials.SF_GrassCards_Mat} />,
       <mesh key="grasscards1" geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0_1.geometry} material={materials.SF_GrassCards_Mat} />,
       <mesh key="grasscards2" geometry={nodes.Final_Bridge1_SF_GrassCards_Mat_0_2.geometry} material={materials.SF_GrassCards_Mat} />,
@@ -203,13 +203,12 @@ export function Island({
       <mesh key="roof1" geometry={nodes.Final_Bridge1_SF_Roof_Final_0_1.geometry} material={materials.SF_Roof_Final} />,
       <mesh key="roof2" geometry={nodes.Final_Bridge1_SF_Roof_Final_0_2.geometry} material={materials.SF_Roof_Final} />,
       <mesh key="roof3" geometry={nodes.Final_Bridge1_SF_Roof_Final_0_3.geometry} material={materials.SF_Roof_Final} />,
-      <mesh key="windows" geometry={nodes.Final_Bridge1_SF_Windows_Mat_0.geometry} material={materials.SF_Windows_Mat} />,
-      <mesh key="windows1" geometry={nodes.Final_Bridge1_SF_Windows_Mat_0_1.geometry} material={materials.SF_Windows_Mat} />,
-      <mesh key="windows2" geometry={nodes.Final_Bridge1_SF_Windows_Mat_0_2.geometry} material={materials.SF_Windows_Mat} />,
+      <mesh key="water" geometry={nodes.Final_Bridge1_Final_Water001_0.geometry} material={materials['Final_Water.001']} />,
+
       <mesh key="plastertex" geometry={nodes.Final_Bridge1_SF_PlasterTex_Mat_0.geometry} material={materials.SF_PlasterTex_Mat} />,
-      <mesh key="stonebrick" geometry={nodes.Final_Bridge1_SF_StoneBrick_Mat_0.geometry} material={materials.SF_StoneBrick_Mat} />,
+      // <mesh key="stonebrick" geometry={nodes.Final_Bridge1_SF_StoneBrick_Mat_0.geometry} material={materials.SF_StoneBrick_Mat} />,
       <mesh key="housesupport" geometry={nodes.Final_Bridge1_SF_HouseSupport_Mat_0.geometry} material={materials.SF_HouseSupport_Mat} />,
-      <mesh key="rocks2" geometry={nodes.Final_Bridge1_Final_Rocks2_Mat_0.geometry} material={materials.Final_Rocks2_Mat} />,
+      // <mesh key="rocks2" geometry={nodes.Final_Bridge1_Final_Rocks2_Mat_0.geometry} material={materials.Final_Rocks2_Mat} />,
       <mesh key="treeleaf" geometry={nodes.Final_Bridge1_SF_TreeLeaf_Mat_0.geometry} material={materials.SF_TreeLeaf_Mat} />,
       <mesh key="grass" geometry={nodes.Final_Bridge1_SF_Grass_Mat_0.geometry} material={materials.SF_Grass_Mat} />,
 
@@ -231,7 +230,9 @@ export function Island({
     const highDetailMeshes = (!isMobile && !performanceIssue) ? [
       <mesh key="sack" geometry={nodes.Final_Bridge1_SF_Sack_Mat_0.geometry} material={materials.SF_Sack_Mat} />,
       <mesh key="butterfly" geometry={nodes.Final_Bridge1_SF_ButterFly_Mat_0.geometry} material={materials.SF_ButterFly_Mat} />,
-      <mesh key="water" geometry={nodes.Final_Bridge1_Final_Water001_0.geometry} material={materials['Final_Water.001']} />,
+        <mesh key="windows" geometry={nodes.Final_Bridge1_SF_Windows_Mat_0.geometry} material={materials.SF_Windows_Mat} />,
+      <mesh key="windows1" geometry={nodes.Final_Bridge1_SF_Windows_Mat_0_1.geometry} material={materials.SF_Windows_Mat} />,
+      <mesh key="windows2" geometry={nodes.Final_Bridge1_SF_Windows_Mat_0_2.geometry} material={materials.SF_Windows_Mat} />,
     ] : [];
     
     return [...essentialMeshes, ...detailMeshes, ...highDetailMeshes];
