@@ -178,6 +178,6 @@ export const projects = [
         theme: 'btn-back-yellow',
         name: 'Drone Website',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/AKB-JSON/DroneServiceFrontend',
+        link: 'https://drone-service-frontend.vercel.app/',
     }
 ];
